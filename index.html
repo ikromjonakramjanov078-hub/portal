@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <title>DREAM PORTAL | Orzular olami</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-ring"></div>
+    <p>ORZULAR OLAMI OCHILMOQDA...</p>
+  </div>
+
+  <div id="scene"></div>
+  <div class="vignette"></div>
+  <div class="scanlines"></div>
+
+  <header class="topbar">
+    <a href="#" class="logo" id="homeLogo">
+      <span class="logo-symbol">◈</span>
+      DREAM<span>PORTAL</span>
+    </a>
+    <div class="top-status">
+      <span class="status-dot"></span>
+      <span id="statusText">PORTAL KUTILMOQDA</span>
+    </div>
+    <button id="soundBtn" class="icon-btn" title="Ovoz holati">♪</button>
+  </header>
+
+  <main>
+    <section id="homeScreen" class="screen active">
+      <div class="hero">
+        <div class="eyebrow">
+          <span></span> CHEGARALAR ORTIDAGI OLAM
+        </div>
+        <h1>HAQIQATDAN<br> <span class="gold-text">TASHQARIGA.</span></h1>
+        <p class="intro">
+          Bir portal. To‘rtta olam. Cheksiz imkoniyatlar.
+          O‘zing istagan olamni tanla va noma’lumlik sari qadam qo‘y.
+        </p>
+        <div class="portal-hint">
+          <span class="hint-line"></span>
+          <span>PORTALNI BOS VA SAYOHATNI BOSHLА</span>
+          <span class="hint-line"></span>
+        </div>
+      </div>
+
+      <div class="world-grid">
+        <button class="world-card" data-world="0">
+          <span class="card-number">01 / GALAKTIKA</span>
+          <span class="world-icon">✧</span>
+          <span class="card-title">KOINOT</span>
+          <span class="card-desc">Yulduzlar orasida</span>
+          <span class="card-enter">OLAMGA KIRISH ↗</span>
+        </button>
+        <button class="world-card" data-world="1">
+          <span class="card-number">02 / KELAJAK</span>
+          <span class="world-icon">⌘</span>
+          <span class="card-title">2099</span>
+          <span class="card-desc">Kelajak shahri</span>
+          <span class="card-enter">OLAMGA KIRISH ↗</span>
+        </button>
+        <button class="world-card" data-world="2">
+          <span class="card-number">03 / SIR</span>
+          <span class="world-icon">◎</span>
+          <span class="card-title">PARALLEL</span>
+          <span class="card-desc">Boshqa o‘lcham</span>
+          <span class="card-enter">OLAMGA KIRISH ↗</span>
+        </button>
+        <button class="world-card" data-world="3">
+          <span class="card-number">04 / MO‘JIZA</span>
+          <span class="world-icon">◇</span>
+          <span class="card-title">SEHRLI OLAM</span>
+          <span class="card-desc">Kristallar saltanati</span>
+          <span class="card-enter">OLAMGA KIRISH ↗</span>
+        </button>
+      </div>
+      <div class="bottom-note">3D TAJRIBA <span>•</span> SICHQONCHA BILAN BOSHQAR</div>
+    </section>
+
+    <section id="worldScreen" class="screen">
+      <div class="world-info">
+        <div class="eyebrow"><span></span> SEN YANGI OLAMDASAN</div>
+        <p id="worldIndex" class="world-index">OLAM 01 / 04</p>
+        <h2 id="worldTitle">KOINOT</h2>
+        <p id="worldDescription">Yulduzlar orasidagi cheksiz sayohat.</p>
+        <div class="world-controls">
+          <button id="prevWorld" class="outline-btn">← OLDINGISI</button>
+          <button id="nextWorld" class="gold-btn">KEYINGISI →</button>
+        </div>
+        <button id="returnBtn" class="return-btn">↩ PORTALGA QAYTISH</button>
+      </div>
+      <div class="world-caption">
+        <span class="status-dot"></span>
+        <span id="worldCaption">OLAM FAOL</span>
+      </div>
+    </section>
+  </main>
+
+  <div id="transition" class="transition">
+    <div class="transition-core"></div>
+    <p id="transitionText">PORTAL OCHILMOQDA</p>
+  </div>
+
+  <footer class="footer">
+    <span>DREAM PORTAL <span class="gold-text">© 2026</span></span>
+    <span>YANGI OLAMLAR SENI KUTMOQDA</span>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
